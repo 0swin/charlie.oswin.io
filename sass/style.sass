@@ -1,19 +1,71 @@
+// DEBUGGER
+// *
+//   outline: solid 0.25rem rgba(0, 250, 250, 0.25) !important
+
+// VARIABLES
+
+\:root
+  --primary-color: #00FFD8
+
+// BOOTSTRAP
+.text-primary
+  color: var(--primary-color)!important
+  
+// CUSTOM CSS
 *
-  outline: solid 0.25rem rgba(0, 250, 250, 0.25) !important
+  font-family: Montserrat
+  font-weight: 500
 
-.row-33
+// .row-33
+//   width: 100%
+//   min-height: calc(100vh / 3)
+//   z-index: 1
+
+// #button-bg
+//   width: 90%
+//   height: calc(100vh / 3)
+//   background: red
+//   position: absolute
+//   top: 0
+//   z-index: -1
+//   transition: margin-top 0.3s cubic-bezier(0.4, 0, 0.2, 1)
+
+.duotone
+  &::before
+    background-color: var(--primary-color)
+    content: ''
+    display: block
+    width: 100%
+    height: 100%
+    mix-blend-mode: darken
+    position: absolute
+    top: 0
+    left: 0
+  &::after
+    background-color: #343a40
+    content: ''
+    display: block
+    width: 100%
+    height: 100%
+    mix-blend-mode: lighten
+    position: absolute
+    top: 0
+    left: 0
+
+#hero
+  background: url('https://mynoise.net/Data/WHITE/fb.jpg')
+  background-size: repeat
   width: 100%
-  min-height: calc(100vh / 3)
-  z-index: 1
-
-#button-bg
-  width: 90%
-  height: calc(100vh / 3)
-  background: red
-  position: absolute
-  top: 0
-  z-index: -1
-  transition: margin-top 0.3s cubic-bezier(0.4, 0, 0.2, 1)
-
-#animation
   height: 100%
+  .col-md-6
+    figure
+      position: absolute
+      bottom: 0
+  .scroll-cta
+    position: absolute
+    bottom: 2.5em
+    left: 50%
+    z-index: 100
+    transform: translateX(-50%)
+  .display-1
+    margin-left: -0.09em

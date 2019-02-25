@@ -1,29 +1,59 @@
 doctype html
-html
+html(lang="en")
   head
     meta(charset="utf-8")
-    meta(http-equiv="x-ua-compatible" content="ie=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="x-ua-compatible", content="ie=edge")
     title Charlie Delahousse
-    meta(name="description" content="")
-    meta(name="viewport" content="width=device-width, initial-scale=1")
-    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.css")
-    link(rel="stylesheet" href="css/style.css")
+    meta(name="description", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.css")
+    link(rel="stylesheet", href="css/style.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700.css")
 
   body
-    div.container
-      div.row
-        div.col-md-6
-          h1 Charlie Delahousse
-        div.col-md-6
-          div#btn-1.row-33
-            h2 Catégorie 1
-          div#btn-2.row-33
-            h2 Catégorie 2
-          div#btn-3.row-33
-            h2 Catégorie 3
-          div#button-bg
-            div#animation
-            
+    //- .container
+    //-   .row
+    //-     .col-md-6
+    //-       h1 Charlie Delahousse
+    //-     .col-md-6
+    //-       #btn-1.row-33
+    //-         h2 Catégorie 1
+    //-       #btn-2.row-33
+    //-         h2 Catégorie 2
+    //-       #btn-3.row-33
+    //-         h2 Catégorie 3
+    //-       #button-bg
+    //-         #animation.h-100
+    nav.navbar.navbar-dark.fixed-top
+      .container
+        a.navbar-brand(href="#")
+          | KHA
+          span.text-primary .
+    #hero.text-light.duotone
+      .container.vh-100
+        .row.m-0.h-100
+          .col-md-6
+            div#hero-text.d-flex.flex-column.justify-content-center.h-100
+              h1.display-1
+                | KHA
+                span.text-primary .
+              h2
+                | Lorem 
+                span.text-primary Charlie 
+                | ipsum dolor sit met elit Paris.
+                br
+                | I’m doing 
+                span.text-primary fine.
+          .col-md-6.d-none.d-md-flex
+            figure.duotone
+              img.img-fluid(src="http://pngimg.com/uploads/cat/cat_PNG50514.png", alt="alt")
+      p.scroll-cta.text-center
+        | Scroll
+        br
+        svg.mt-2(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewBox='0 0 24 24', fill='none', stroke='currentColor', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+          line(x1='12', y1='5', x2='12', y2='19')
+          polyline(points='19 12 12 19 5 12')
 
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js", type="text/javascript")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.4/lottie.min.js")

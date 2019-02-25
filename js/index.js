@@ -33,5 +33,4 @@ function playAnimation() {
 playAnimation();
 lottie.setSpeed(1 / 60);
 
-
 // $("#btn-1").hasClass("active")

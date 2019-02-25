@@ -1,21 +1,50 @@
+:root {
+  --primary-color: #00FFD8; }
+
+.text-primary {
+  color: var(--primary-color) !important; }
+
 * {
-  outline: solid 0.25rem rgba(0, 250, 250, 0.25) !important; }
+  font-family: Montserrat;
+  font-weight: 500; }
 
-.row-33 {
+.duotone::before {
+  background-color: var(--primary-color);
+  content: '';
+  display: block;
   width: 100%;
-  min-height: calc(100vh / 3);
-  z-index: 1; }
-
-#button-bg {
-  width: 90%;
-  height: calc(100vh / 3);
-  background: red;
+  height: 100%;
+  mix-blend-mode: darken;
   position: absolute;
   top: 0;
-  z-index: -1;
-  -webkit-transition: margin-top 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: margin-top 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: margin-top 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+  left: 0; }
 
-#animation {
+.duotone::after {
+  background-color: #343a40;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: lighten;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+#hero {
+  background: url("https://mynoise.net/Data/WHITE/fb.jpg");
+  background-size: repeat;
+  width: 100%;
   height: 100%; }
+  #hero .col-md-6 figure {
+    position: absolute;
+    bottom: 0; }
+  #hero .scroll-cta {
+    position: absolute;
+    bottom: 2.5em;
+    left: 50%;
+    z-index: 100;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+  #hero .display-1 {
+    margin-left: -0.09em; }
