@@ -9,35 +9,29 @@ function playAnimation() {
     renderer: "svg",
     loop: false,
     autoplay: false,
-    path: "json/data.json",
+    path: "json/1>2.json",
     preserveAspectRatio: false
   };
   var anim = lottie.loadAnimation(animationData);
 
-  $("#btn-1").mouseover(function() {
-    $("#lottie-container").css("margin-top", "0px");
+  function animatedNav(button, primaryColor, background) {
+    console.log("1")
+    $("#lottie-container").css("margin-top", $(button).position().top + "px");
     $(".active").removeClass("active");
-    $("#btn-1").addClass("active");
-    changeBackground("#000000");
-  });
+    $(button).addClass("active");
+    $(":root").css("--primary", primaryColor);
+    $("#hero").css("background", background);
+  };
 
-  $("#btn-2").mouseover(function() {
-    $("#lottie-container").css("margin-top", "40px");
-    $(".active").removeClass("active");
-    $("#btn-2").addClass("active");
-    changeBackground("#999999");
+  $("#btn-1").mouseover(function () {
+    animatedNav("#btn-1", "red", "#500000")
   });
-
-  $("#btn-3").mouseover(function() {
-    $("#lottie-container").css("margin-top", "80px");
-    $(".active").removeClass("active");
-    $("#btn-3").addClass("active");
-    changeBackground("#cccccc");
+  $("#btn-2").mouseover(function () {
+    animatedNav("#btn-2", "aqua", "#000050")
   });
-
+  $("#btn-3").mouseover(function () {
+    animatedNav("#btn-3", "lime", "#005000")
+  });
 };
 
-playAnimation();
-lottie.setSpeed(1 / 60);
-
-// $("#btn-1").hasClass("active")
+playAnimation()
