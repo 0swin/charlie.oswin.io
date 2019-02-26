@@ -1,5 +1,9 @@
+function changeBackground(url) {
+  $("#hero").css("background", url)
+}
+
 function playAnimation() {
-  var container = document.getElementById('animation')
+  var container = document.getElementById('lottie-container')
   var animationData = {
     container: container,
     renderer: "svg",
@@ -11,21 +15,24 @@ function playAnimation() {
   var anim = lottie.loadAnimation(animationData);
 
   $("#btn-1").mouseover(function() {
-    $("#button-bg").css("margin-top", "calc(0*(100vh / 3))");
-    $(".active").removeClass("active")
-    $("#btn-1").addClass("active")
+    $("#lottie-container").css("margin-top", "0px");
+    $(".active").removeClass("active");
+    $("#btn-1").addClass("active");
+    changeBackground("#000000");
   });
 
   $("#btn-2").mouseover(function() {
-    $("#button-bg").css("margin-top", "calc(100vh / 3)");
-    $(".active").removeClass("active")
-    $("#btn-2").addClass("active")
+    $("#lottie-container").css("margin-top", "40px");
+    $(".active").removeClass("active");
+    $("#btn-2").addClass("active");
+    changeBackground("#999999");
   });
 
   $("#btn-3").mouseover(function() {
-    $("#button-bg").css("margin-top", "calc(2*(100vh / 3))");
-    $(".active").removeClass("active")
-    $("#btn-3").addClass("active")
+    $("#lottie-container").css("margin-top", "80px");
+    $(".active").removeClass("active");
+    $("#btn-3").addClass("active");
+    changeBackground("#cccccc");
   });
 
 };
