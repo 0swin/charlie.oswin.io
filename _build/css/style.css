@@ -55,7 +55,7 @@ body {
     #hero {
       background-image: url("../img/heroBg.jpg");
       background-size: cover; } }
-  #hero #bg {
+  #hero .bg {
     pointer-events: none;
     z-index: -1;
     position: fixed;
