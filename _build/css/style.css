@@ -69,12 +69,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    @media screen and (max-width: 767px) {
-      #hero #hero-text {
-        -webkit-box-pack: end;
-        -ms-flex-pack: end;
-        justify-content: end;
-        padding-bottom: 3em; } }
   #hero #nav {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
