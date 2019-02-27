@@ -21,7 +21,7 @@ html(lang="en")
       .container.vh-100
         .row.m-0.h-100
           .col-md-6
-            div#hero-text.d-flex.flex-column.justify-content-center.h-100
+            div#hero-text.h-100
               h1.display-1
                 | KHA
                 span.text-primary .
@@ -32,22 +32,21 @@ html(lang="en")
                 br
                 | I’m doing 
                 span.text-primary fine.
+          .col-md-6
+            #nav.container-fluid.h-100
               nav
                 .row
                   .col-1
                     #lottie-container
-                  .col-11
+                  .col-10
                     ul.nav.flex-column
                       li#btn-1.active.nav-item
-                        a.nav-link.text-light(href="#") Link
+                        a.nav-link.text-light(href="#") Catégorie 1
                       li#btn-2.nav-item
-                        a.nav-link.text-light(href="#") Link
+                        a.nav-link.text-light(href="#") Catégorie 2
                       li#btn-3.nav-item
-                        a.nav-link.text-light(href="#") Link
-          .col-md-6.d-none.d-md-flex
-            aside.duotone
-              img.img-fluid(src="", alt="Photo")
+                        a.nav-link.text-light(href="#") Catégorie 3
 
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js", type="text/javascript")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.4/lottie.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.4/lottie.min.js", type="text/javascript")
     script(src="js/index.js", type="text/javascript")

@@ -1,11 +1,13 @@
 // DEBUGGER
-// *
-//   outline: solid 0.25rem rgba(0, 250, 250, 0.25) !important
+*
+  outline: solid 0.25rem rgba(0, 250, 250, 0.25) !important
 
 // VARIABLES
 
 \:root
   --primary: #00FFD8
+  --duotone-darken: --primary
+  --duotone-lighten: #343a40
 
 // BOOTSTRAP
 .text-primary
@@ -16,11 +18,6 @@
   font-family: Montserrat
   font-weight: 500
   transition: 0.3s
-
-// .row-33
-//   width: 100%
-//   min-height: calc(100vh / 3)
-//   z-index: 1
 
 .duotone
   &::before
@@ -63,28 +60,44 @@
     transform: translateX(-50%)
   .display-1
     margin-left: -0.09em
-  nav
-    margin-left: -40px
-    #lottie-container
-      height: 40px
-      width: 40px
-      transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1)
-      // *
-      //   stroke: white
-    ul
-      li
-        a
-          font-weight: 400
-          transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1)
-      #btn-1.active
-        a
-          font-weight: 800
-          color: red !important;
-      #btn-2.active
-        a
-          font-weight: 800
-          color: aqua !important;
-      #btn-3.active
-        a
-          font-weight: 800
-          color: green !important;
+    font-weight: 600
+  #hero-text
+    justify-content: center
+    flex-direction: column
+    display: flex
+    @media screen and (max-width: 767px)
+      justify-content: end
+      padding-bottom: 3em
+  #nav
+    justify-content: center
+    flex-direction: column
+    display: flex
+    @media screen and (max-width: 767px)
+      justify-content: start
+    nav
+      margin-left: -32px
+      #lottie-container
+        height: 64px
+        width: 64px
+        transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1)
+        *
+          stroke: var(--primary)
+      ul
+        line-height: 3em
+        margin-left: 10px
+        li
+          a
+            font-weight: 400
+            transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1)
+        #btn-1.active
+          a
+            font-weight: 800
+            color: red !important;
+        #btn-2.active
+          a
+            font-weight: 800
+            color: aqua !important;
+        #btn-3.active
+          a
+            font-weight: 800
+            color: lime !important;
