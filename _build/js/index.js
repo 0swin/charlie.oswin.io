@@ -24,8 +24,7 @@ window.animatedNav = function (button, primaryColor, background) {
   $("#bg").css("opacity", "0");
   setTimeout(function () {
     $("#bg").css("opacity", "1");
-  }, 200);
-  // $("#hero").css("background", background)
+  }, 250);
 };
 
 $("#btn-1").mouseover(function () {
@@ -37,3 +36,5 @@ $("#btn-2").mouseover(function () {
 $("#btn-3").mouseover(function () {
   animatedNav("#btn-3", "hsla(120, 100%, 50%, 1)", "rgba(0, 80, 0, 1)");
 });
+
+animatedNav("#btn-1", "hsla(0, 100%, 50%, 1)", "rgba(80, 0, 0, 1)");
