@@ -117,8 +117,6 @@ body {
       -webkit-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       -o-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-      #hero #nav nav #lottie-container * {
-        stroke: var(--primary); }
     #hero #nav nav ul {
       line-height: 3em;
       margin-left: 10px; }
