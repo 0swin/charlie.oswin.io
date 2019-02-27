@@ -1,7 +1,7 @@
 :root {
   --primary: #00FFD8;
   --duotone-darken: --primary;
-  --duotone-lighten: #343a40; }
+  --duotone-lighten: #25292e; }
 
 .text-primary {
   color: var(--primary) !important; }
@@ -13,8 +13,14 @@
   -o-transition: 0.3s;
   transition: 0.3s; }
 
+body {
+  background-color: black; }
+
 .duotone::before {
   background-color: var(--primary);
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
   content: '';
   display: block;
   width: 100%;
@@ -25,7 +31,10 @@
   left: 0; }
 
 .duotone::after {
-  background-color: #343a40;
+  background-color: var(--duotone-lighten);
+  -webkit-transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.4, 0, 0.2, 1;
+  -o-transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.4, 0, 0.2, 1;
+  transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.4, 0, 0.2, 1;
   content: '';
   display: block;
   width: 100%;
@@ -37,13 +46,23 @@
   pointer-events: none; }
 
 #hero {
-  background: #000000;
-  background-size: cover;
   width: 100%;
   height: 100%;
-  -webkit-transition: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 0.6s cubic-bezier(0.4, 0, 0.2, 1); }
+  -webkit-transition: 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.4, 0, 0.2, 1;
+  -o-transition: 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.4, 0, 0.2, 1;
+  transition: 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.4, 0, 0.2, 1; }
+  #hero #bg {
+    pointer-events: none;
+    z-index: -10;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/heroBg.jpg");
+    background-size: cover;
+    opacity: 1;
+    -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.4, 0, 0.2, 1;
+    -o-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.4, 0, 0.2, 1;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.4, 0, 0.2, 1; }
   #hero .col-md-6 aside {
     position: absolute;
     bottom: 0; }
@@ -85,30 +104,28 @@
         -webkit-box-pack: start;
         -ms-flex-pack: start;
         justify-content: start; } }
-    #hero #nav nav {
-      margin-left: -32px; }
-      #hero #nav nav #lottie-container {
-        height: 64px;
-        width: 64px;
+    #hero #nav nav #lottie-container {
+      height: 64px;
+      width: 64px;
+      -webkit-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      -o-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+      #hero #nav nav #lottie-container * {
+        stroke: var(--primary); }
+    #hero #nav nav ul {
+      line-height: 3em;
+      margin-left: 10px; }
+      #hero #nav nav ul li a {
+        font-weight: 400;
         -webkit-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         -o-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-        #hero #nav nav #lottie-container * {
-          stroke: var(--primary); }
-      #hero #nav nav ul {
-        line-height: 3em;
-        margin-left: 10px; }
-        #hero #nav nav ul li a {
-          font-weight: 400;
-          -webkit-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-          -o-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-          transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-        #hero #nav nav ul #btn-1.active a {
-          font-weight: 800;
-          color: red !important; }
-        #hero #nav nav ul #btn-2.active a {
-          font-weight: 800;
-          color: aqua !important; }
-        #hero #nav nav ul #btn-3.active a {
-          font-weight: 800;
-          color: lime !important; }
+      #hero #nav nav ul #btn-1.active a {
+        font-weight: 800;
+        color: red !important; }
+      #hero #nav nav ul #btn-2.active a {
+        font-weight: 800;
+        color: aqua !important; }
+      #hero #nav nav ul #btn-3.active a {
+        font-weight: 800;
+        color: lime !important; }
