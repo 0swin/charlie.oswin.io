@@ -22,7 +22,7 @@ playAnimation("json/logo.json");
 anim.setSpeed(10);
 
 window.animatedNav = function (button, primaryColor, animationPath) {
-  $("#lottie-container").css("margin-top", $(button).position().top + "px");
+  $("#lottie-container").css("top", $(button).position().top + "px");
   $(".active").removeClass("active");
   $(button).addClass("active");
   $(":root").css("--primary", primaryColor);

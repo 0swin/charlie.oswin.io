@@ -111,6 +111,7 @@ body {
         -ms-flex-pack: start;
         justify-content: start; } }
     #hero #nav nav #lottie-container {
+      position: absolute;
       height: 64px;
       width: 64px;
       margin-left: -16px;
