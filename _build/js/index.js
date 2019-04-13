@@ -51,8 +51,9 @@ $("#btn-2").mouseover(function () {
   animatedNav("#btn-2", "hsla(180, 100%, 50%, 1)", "rgba(0, 0, 80, 1)");
 });
 $("#btn-3").mouseover(function () {
-  if ($("#btn-1").hasClass("active")) {}
-  anim.playSegments([60, 119], false);
+  if ($("#btn-1").hasClass("active")) {
+    anim.playSegments([60, 119], false);
+  }
   if ($("#btn-2").hasClass("active")) {
     anim.playSegments([180, 239], false);
   }
