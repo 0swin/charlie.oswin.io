@@ -35,29 +35,32 @@ window.animatedNav = function (button, primaryColor, animationPath) {
 $("#btn-1").mouseover(function () {
   if ($("#btn-3").hasClass("active")) {
     anim.playSegments([240, 299], false);
+    animatedNav("#btn-1", "hsla(0, 100%, 50%, 1)", "rgba(80, 0, 0, 1)");
   }
   if ($("#btn-2").hasClass("active")) {
     anim.playSegments([120, 179], false);
+    animatedNav("#btn-1", "hsla(0, 100%, 50%, 1)", "rgba(80, 0, 0, 1)");
   }
-  animatedNav("#btn-1", "hsla(0, 100%, 50%, 1)", "rgba(80, 0, 0, 1)");
 });
 $("#btn-2").mouseover(function () {
   if ($("#btn-1").hasClass("active")) {
     anim.playSegments([0, 59], false);
+    animatedNav("#btn-2", "hsla(180, 100%, 50%, 1)", "rgba(0, 0, 80, 1)");
   }
   if ($("#btn-3").hasClass("active")) {
     anim.playSegments([300, 359], false);
+    animatedNav("#btn-2", "hsla(180, 100%, 50%, 1)", "rgba(0, 0, 80, 1)");
   }
-  animatedNav("#btn-2", "hsla(180, 100%, 50%, 1)", "rgba(0, 0, 80, 1)");
 });
 $("#btn-3").mouseover(function () {
   if ($("#btn-1").hasClass("active")) {
     anim.playSegments([60, 119], false);
+    animatedNav("#btn-3", "hsla(120, 100%, 50%, 1)", "rgba(0, 80, 0, 1)");
   }
   if ($("#btn-2").hasClass("active")) {
     anim.playSegments([180, 239], false);
+    animatedNav("#btn-3", "hsla(120, 100%, 50%, 1)", "rgba(0, 80, 0, 1)");
   }
-  animatedNav("#btn-3", "hsla(120, 100%, 50%, 1)", "rgba(0, 80, 0, 1)");
 });
 // anim = lottie.destroy()
 // anim = lottie.loadAnimation({
