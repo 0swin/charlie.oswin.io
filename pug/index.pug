@@ -9,30 +9,31 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1")
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.css")
     link(rel="stylesheet", href="css/style.css")
-    link(rel="stylesheet", href="ttps://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800")
 
   body
     nav.navbar.navbar-dark.fixed-top
-      .container
-        a.navbar-brand(href="#")
-          | KHA
-          span.text-primary .
+      a.navbar-brand(href="#")
+        | KHA
+        span.text-primary .
+      //- button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+        span.navbar-toggler-icon
     #hero.text-light.duotone
       .container.vh-100
         .row.m-0.h-100
-          .col-md-6
+          .col-md-5
             div#hero-text.h-100
               h1.display-1
                 | KHA
                 span.text-primary .
               h2
-                | Lorem 
+                | I am  
                 span.text-primary Charlie 
-                | ipsum dolor sit met elit Paris.
+                | a graphic designer from Paris.
                 br
                 | I’m doing 
                 span.text-primary fine.
-          .col-md-6
+          .col-md-6.offset-md-1
             #nav.container-fluid.h-100
               nav
                 .row
@@ -50,5 +51,7 @@ html(lang="en")
 
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js", type="text/javascript")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.4/lottie.min.js", type="text/javascript")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js")
+    
     script(src="js/index.js", type="text/javascript")
     script(src="//instant.page/1.2.1" type="module" integrity="sha384-/IkE5iZAM/RxPto8B0nvKlMzIyCWtYocF01PbGGp1qElJuxv9J4whdWBRtzZltWn")
