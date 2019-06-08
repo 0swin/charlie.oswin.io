@@ -1,65 +1,60 @@
 <!DOCTYPE html>
 html(lang="en")
-
 meta(charset="UTF-8")
+
 meta(name="viewport", content="width=device-width, initial-scale=1.0")
 meta(http-equiv="X-UA-Compatible", content="ie=edge")
 title Document
 link(rel="stylesheet", href="assets/css/bootstrap.min.css")
 link(rel="stylesheet", href="assets/css/style.css")
-script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js")
-script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js")
-script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js")
-
 
 .container-fluid
   #accordionExample.accordion
     .card
       #headingZero.card-header
-        h1 Logo
+        include partials/svg/name.pug
     .card
       #headingOne.card-header
-        h5.mb-0
-          button.btn.btn-link(type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne") Categorie 1
+        div.collapsed(data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne")
+          include partials/svg/motion.pug
       #collapseOne.collapse(aria-labelledby="headingOne" data-parent="#accordionExample")
         .card-body
           .container
             .row
-              include projets/exempleYoutube.pug
-              include projets/exempleVimeo.pug
+              include partials/projets/exempleYoutube.pug
+              include partials/projets/exempleVimeo.pug
     .card
       #headingTwo.card-header
-        h5.mb-0
-          button.btn.btn-link.collapsed(type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo")
-            | Collapsible Group Item #2
+        div.collapsed(data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo")
+          include partials/svg/interaction.pug
       #collapseTwo.collapse(aria-labelledby="headingTwo" data-parent="#accordionExample")
         .card-body
+          .container
+            .row
+              include partials/projets/exempleYoutube.pug
+              include partials/projets/exempleVimeo.pug
     .card
       #headingThree.card-header
-        h5.mb-0
-          button.btn.btn-link.collapsed(type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree")
-            | Collapsible Group Item #3
+        div.collapsed(ype="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree")
+          include partials/svg/3dart.pug
       #collapseThree.collapse(aria-labelledby="headingThree" data-parent="#accordionExample")
         .card-body
+          .container
+            .row
+              include partials/projets/exempleYoutube.pug
+              include partials/projets/exempleVimeo.pug
     .card
       #headingFour.card-header
-        h5.mb-0
-          button.btn.btn-link.collapsed(type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour")
-            | Collapsible Group Item #3
+        div.collapsed(data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour")
+          include partials/svg/photography.pug
       #collapseFour.collapse(aria-labelledby="headingFour" data-parent="#accordionExample")
         .card-body
-          p lorem
-          p ipsum
-          p Oui
+          .container
+            .row
+              include partials/projets/exempleYoutube.pug
+              include partials/projets/exempleVimeo.pug
 
-script.
-  $('#collapseOne').on('shown.bs.collapse', function () {
-    $('html, body').animate({
-       scrollTop: $("#collapseOne").offset().top
-    }, 600);
-  });
-  $('#collapseFour').on('shown.bs.collapse', function () {
-    $('html, body').animate({
-       scrollTop: $("#collapseFour").offset().top
-    }, 600);
-  });
+script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js")
+script(src="assets/js/index.js")

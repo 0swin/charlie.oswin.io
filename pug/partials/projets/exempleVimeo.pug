@@ -2,10 +2,10 @@
 -var titre = "Destiny/Fate (Keep Going)" // TITRE
 -var titreShort = "destinyFate" // UN SEUL MOT QUI DESIGNE LE CONTENU
 -var thumbnail = "https://i.vimeocdn.com/video/679712011_1280x720.jpg" // MINIATURE
--var videoLink = "https://vimeo.com/252948828"
+-var videoLink = "https://player.vimeo.com/video/252948828" // LIEN DE LA VIDEO
 
 //- NE RIEN TOUCHER
-.col-6
+.col-md-6
   .text-center
     p(href="#" data-toggle="modal" data-target="#" + titreShort)
       img.img-fluid(src=thumbnail)
@@ -19,5 +19,6 @@ div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicM
       .modal-body
         div.embed-responsive.embed-responsive-16by9
           iframe(src=videoLink frameborder="0" allowfullscreen)
+          
         //- À MODIFIER (CONTENU DE LA PAGE)
         p Lorem ipsum

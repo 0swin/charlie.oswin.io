@@ -2,8 +2,34 @@
 // *
 //   outline: solid 2px rgba(0, 250, 250, 0.15) !important
 
+.card
+	background-color: black
+	.card-header
+		background-color: black
+		div
+			height: 100%
+
+body
+	background-color: #000
+
 .card-header
 	height: calc(100vh / 6)
-  
+
+svg
+	height: 100%
+	max-width: 80vw
+	path
+		stroke: white
+		stroke-width: 1px
+
+div[aria-expanded="true"]
+	svg
+		path
+			fill: white
+			transform: fill 1s ease-out
+
 #headingZero
 	height: calc(100vh / 6 * 2)
+	svg
+		path
+			fill: white
