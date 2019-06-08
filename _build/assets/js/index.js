@@ -18,3 +18,8 @@ $('#collapseFour').on('shown.bs.collapse', function () {
     scrollTop: $("#collapseFour").offset().top
   }, 450);
 });
+
+$('.modal').on('hide.bs.modal', function() {
+  var memory = $(this).html();
+  $(this).html(memory);
+});
