@@ -1,0 +1,24 @@
+//- À MODIFIER
+-var titre = "Madeon - All my Friends" // TITRE
+-var titreShort = "madeon" // UN SEUL MOT QUI DESIGNE LE CONTENU
+-var thumbnail = "https://img.youtube.com/vi/_qYyU019PbI/maxresdefault.jpg" // MINIATURE
+-var videoLink = "https://www.youtube-nocookie.com/embed/OmZSGz9El2I" // LIEN DE LA VIDEO
+
+//- NE RIEN TOUCHER
+.col-md-6
+  .text-center
+    p(href="#" data-toggle="modal" data-target="#" + titreShort)
+      img.img-fluid(src=thumbnail)
+div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true")
+  .modal-dialog.modal-lg
+    .modal-content
+      .modal-header
+        h4.modal-title= titre
+        button.close(type="button" data-dismiss="modal" aria-label="Close")
+          span(aria-hidden="true") ×
+      .modal-body
+        div.embed-responsive.embed-responsive-16by9
+          iframe(src=videoLink+"?&amp;color=white&amp;modestbranding=1&amp;rel=0" frameborder="0" allowfullscreen)
+
+        //- À MODIFIER (CONTENU DE LA PAGE)
+        p Lorem ipsum
