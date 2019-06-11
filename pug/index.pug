@@ -7,6 +7,7 @@ meta(http-equiv="X-UA-Compatible", content="ie=edge")
 title Document
 link(rel="stylesheet", href="assets/css/bootstrap.min.css")
 link(rel="stylesheet", href="assets/css/style.css")
+link(href="https://fonts.googleapis.com/css?family=Roboto+Mono:500&display=swap" rel="stylesheet")
 
 .container-fluid
   #accordionExample.accordion
@@ -19,9 +20,9 @@ link(rel="stylesheet", href="assets/css/style.css")
           include partials/svg/motion.pug
       #collapseOne.collapse(aria-labelledby="headingOne" data-parent="#accordionExample")
         .card-body
-          .container
+          .container-fuid
             .row
-              include partials/projets/exempleYoutube.pug
+              include partials/projets/anamnesis.pug
               include partials/projets/exempleVimeo.pug
     .card
       #headingTwo.card-header
@@ -29,9 +30,8 @@ link(rel="stylesheet", href="assets/css/style.css")
           include partials/svg/interaction.pug
       #collapseTwo.collapse(aria-labelledby="headingTwo" data-parent="#accordionExample")
         .card-body
-          .container
+          .container-fuid
             .row
-              include partials/projets/exempleYoutube.pug
               include partials/projets/exempleVimeo.pug
     .card
       #headingThree.card-header
@@ -39,9 +39,8 @@ link(rel="stylesheet", href="assets/css/style.css")
           include partials/svg/3dart.pug
       #collapseThree.collapse(aria-labelledby="headingThree" data-parent="#accordionExample")
         .card-body
-          .container
+          .container-fuid
             .row
-              include partials/projets/exempleYoutube.pug
               include partials/projets/exempleVimeo.pug
     .card
       #headingFour.card-header
@@ -49,9 +48,8 @@ link(rel="stylesheet", href="assets/css/style.css")
           include partials/svg/photography.pug
       #collapseFour.collapse(aria-labelledby="headingFour" data-parent="#accordionExample")
         .card-body
-          .container
+          .container-fuid
             .row
-              include partials/projets/exempleYoutube.pug
               include partials/projets/exempleVimeo.pug
 
 script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js")
