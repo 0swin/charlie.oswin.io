@@ -7,15 +7,17 @@ meta(http-equiv="X-UA-Compatible", content="ie=edge")
 title Document
 link(rel="stylesheet", href="assets/css/bootstrap.min.css")
 link(rel="stylesheet", href="assets/css/style.css")
-link(href="https://fonts.googleapis.com/css?family=Roboto+Mono:500&display=swap" rel="stylesheet")
+link(href="https://fonts.googleapis.com/css?family=Roboto+Mono:500&display=swap")
+
 
 .container-fluid
   #accordionExample.accordion
-    .card
+
+    #title.card
       #headingZero.card-header
         include partials/svg/name.pug
-    .card
-      //- MOTION
+
+    #motion.card
       #headingOne.card-header
         div.collapsed(data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne")
           include partials/svg/motion.pug
@@ -26,8 +28,7 @@ link(href="https://fonts.googleapis.com/css?family=Roboto+Mono:500&display=swap"
               include partials/projets/motion/anamnesis.pug
               include partials/projets/motion/pennyDreadful.pug
 
-              
-    .card
+    #interaction.card
       #headingTwo.card-header
         div.collapsed(data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo")
           include partials/svg/interaction.pug
@@ -36,7 +37,8 @@ link(href="https://fonts.googleapis.com/css?family=Roboto+Mono:500&display=swap"
           .container-fuid
             .row
               include partials/projets/interaction/BnFGallica.pug
-    .card
+
+    #3dart.card
       #headingThree.card-header
         div.collapsed(ype="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree")
           include partials/svg/3dart.pug
@@ -49,9 +51,7 @@ link(href="https://fonts.googleapis.com/css?family=Roboto+Mono:500&display=swap"
               include partials/projets/3D/clearSky.pug
               include partials/projets/3D/skulls.pug
 
-
-
-    .card
+    #photography.card
       #headingFour.card-header
         div.collapsed(data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour")
           include partials/svg/photography.pug
