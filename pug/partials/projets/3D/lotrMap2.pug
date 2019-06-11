@@ -1,0 +1,28 @@
+//- À MODIFIER
+-var titre = "La quête de l'anneau" // TITRE
+-var titreShort = "lotrMap2" // UN SEUL MOT QUI DESIGNE LE CONTENU
+-var thumbnail = "assets/img/3D/lotrMap2.jpg" // MINIATURE
+-var videoLink = ""
+
+//- NE RIEN TOUCHER
+div.col-md-6.col-lg-4.thumbnail
+  div.text-center
+    p(href="#" data-toggle="modal" data-target="#" + titreShort)
+      img.img-fluid(src=thumbnail)
+      p.text-center.text-light= titre
+
+div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true")
+  div.modal-dialog.modal-lg
+    div.modal-content
+      div.modal-header
+        h4.modal-title= titre
+        button.close(type="button" data-dismiss="modal" aria-label="Close")
+          span(aria-hidden="true") ×
+      div.modal-body
+        img.img-fluid(src="assets/img/3D/lotrMap2.jpg")
+          
+        //- À MODIFIER (CONTENU DE LA PAGE)
+        p "Déloyal est qui dirait adieu quand la route s'assombrit" - Gimli
+    
+        
+      
