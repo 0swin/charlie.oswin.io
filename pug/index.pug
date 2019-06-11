@@ -14,11 +14,11 @@ link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/
 .container-fluid
   #accordionExample.accordion
 
-    #name.card.animated.fadeIn
+    #name.card
       #headingZero.card-header
         include partials/svg/name.pug
 
-    #motion.card.animated.fadeIn
+    #motion.card
       #headingOne.card-header
         div.collapsed(data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne")
           include partials/svg/motion.pug
@@ -29,7 +29,7 @@ link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/
               include partials/projets/motion/anamnesis.pug
               include partials/projets/motion/pennyDreadful.pug
 
-    #interaction.card.animated.fadeIn
+    #interaction.card
       #headingTwo.card-header
         div.collapsed(data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo")
           include partials/svg/interaction.pug
@@ -39,7 +39,7 @@ link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/
             .row
               include partials/projets/interaction/BnFGallica.pug
 
-    #threed.card.animated.fadeIn
+    #threed.card
       #headingThree.card-header
         div.collapsed(ype="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree")
           include partials/svg/3dart.pug
@@ -52,7 +52,7 @@ link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/
               include partials/projets/3D/clearSky.pug
               include partials/projets/3D/skulls.pug
 
-    #photography.card.animated.fadeIn
+    #photography.card
       #headingFour.card-header
         div.collapsed(data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour")
           include partials/svg/photography.pug
