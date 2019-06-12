@@ -19,10 +19,18 @@ div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicM
         button.close(type="button" data-dismiss="modal" aria-label="Close")
           span(aria-hidden="true") ×
       div.modal-body
-        img.img-fluid(src="assets/img/3D/clearSky1.jpg")
-          
         //- À MODIFIER (CONTENU DE LA PAGE)
-        p 
-    
+        div.carousel.slide(id=titreShort+"Carousel" data-ride="carousel")
+          div.carousel-inner
+            div.carousel-item.active
+              img.d-block.w-100(src="assets/img/3D/clearSky1.jpg")
+            div.carousel-item
+              img.d-block.w-100(src="assets/img/3D/clearSky2.jpg")
+          a.carousel-control-prev(href="#"+titreShort+"Carousel" role="button" data-slide="prev")
+            span.carousel-control-prev-icon(aria-hidden="true")
+          a.carousel-control-next(href="#"+titreShort+"Carousel" role="button" data-slide="next")
+            span.carousel-control-next-icon(aria-hidden="true")
+
+        p
         
       

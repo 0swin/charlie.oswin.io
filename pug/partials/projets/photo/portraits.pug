@@ -1,0 +1,34 @@
+//- À MODIFIER
+-var titre = "Portraits noir et blanc" // TITRE
+-var titreShort = "portraitsnb" // UN SEUL MOT QUI DESIGNE LE CONTENU
+-var thumbnail = "assets/img/photo/_1000065.jpg" // MINIATURE
+-var videoLink = ""
+
+//- NE RIEN TOUCHER
+div.col-md-6.col-lg-4.thumbnail
+  div.text-center
+    p(href="#" data-toggle="modal" data-target="#" + titreShort)
+      img.img-fluid(src=thumbnail)
+      p.text-center.text-light= titre
+
+div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true")
+  div.modal-dialog.modal-lg
+    div.modal-content
+      div.modal-header
+        h4.modal-title= titre
+        button.close(type="button" data-dismiss="modal" aria-label="Close")
+          span(aria-hidden="true") ×
+      div.modal-body
+        //- À MODIFIER (CONTENU DE LA PAGE)
+        div.carousel.slide(id=titreShort+"Carousel" data-ride="carousel")
+          div.carousel-inner
+            div.carousel-item.active
+              img.d-block.w-100(src="assets/img/photo/_1000065.jpg")
+            div.carousel-item
+              img.d-block.w-100(src="assets/img/photo/_1000052.jpg")
+          a.carousel-control-prev(href="#"+titreShort+"Carousel" role="button" data-slide="prev")
+            span.carousel-control-prev-icon(aria-hidden="true")
+          a.carousel-control-next(href="#"+titreShort+"Carousel" role="button" data-slide="next")
+            span.carousel-control-next-icon(aria-hidden="true")
+  
+      
