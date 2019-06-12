@@ -98,13 +98,22 @@
                       <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                     </div>
                     <div class="modal-body">
-                      <div class="embed-responsive embed-responsive-16by9">
-                        <iframe src="https://player.vimeo.com/video/341598170" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                      <div class="embed-responsive">
+                        <video autoplay="autoplay" loop="loop">
+                          <source src="assets/img/interaction/video_presentation_1.mp4" type="video/mp4"/>
+                        </video>
                       </div>
                       <p>LE PROJET <br> Notre client était l’organisme Gallica, affilié à la BNF (Bibliothèque Nationale Française), qui s’occupe de la numérisation et l’archivage des documents numériques que contient la BNF. Nous devions filtrer les 5 millions de documents contenus dans l’API qui nous a été confiée et choisir de représenter visuellement une partie de ces données.</p>
+                      <div class="modal-body"><img class="img-fluid" src="assets/img/interaction/Datavis.jpg"/></div>
                       <p>NOS ITÉRATIONS <br> Tout d’abord nous avons du réfléchir à quelles données traiter. Nous nous sommes dirigés vers les vidéos mais tout en gardant la liberté de pouvoir le réaliser avec tous types de fichiers. Notre idée était de mettre en corrélation les dates de création des fichiers avec leurs dates d’ajout dans la base de données ou de modification pour montrer qu’il y a eu des périodes pendant lesquelles il y’a eu énormément d’ajouts de fichiers et d’autres très peu.</p>
-                      <p>LA RÉALISATION <br> Notre idée en tête, il fallait maintenant la réaliser. Nous avons donc codé la visualisation de ces données en faisant se lier les dates de créations sur le demi cercle de droite avec les dates d’ajout sur le demi cercle de droite. Nous avons ensuite animé cette visualisation pour pouvoir coller à notre idée finale.</p>
-                      <p>L'INSTALLATION <br> Nous voulions créer une installation interactive permettant aux visiteurs de la BNF de comprendre le travail important qu’est Gallica. La borne en elle même permettrait d’afficher les liens en fonction des dates que l’ont veut et de masquer le reste. Le principe de cette installation pour être dérivé sur d’autres types de fichiers, ce qui permettrait de comprendre l’étendue de la base de donnée de Gallica telles que les périodiques, les manuscrits, les cartes, etc… </p>
+                      <div class="modal-body"><img class="img-fluid" src="assets/img/interaction/code_gallica_datavis.png"/></div>
+                      <p>LA RÉALISATION <br> Notre idée en tête, il fallait maintenant la réaliser. Nous avons donc codé la visualisation de ces données en faisant se lier les dates de créations sur le demi cercle de droite avec les dates d’ajout ou de dernière modification sur le demi cercle de gauche. Nous avons ensuite animé cette visualisation pour pouvoir coller à notre idée finale. Tout cela fut réalisé grâce à la bibliothèque JavaScript p5.js</p>
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="assets/img/interaction/sequence_projection.mp4" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                      </div>
+                      <p> L'INSTALLATION <br> Nous voulions créer une installation interactive permettant aux visiteurs de la BNF de comprendre le travail important qu’est Gallica. La borne en elle même permettrait d’afficher les liens en fonction des dates que l’ont veut et de masquer le reste. Le principe de cette installation pour être dérivé sur d’autres types de fichiers, ce qui permettrait de comprendre l’étendue de la base de donnée de Gallica telles que les périodiques, les manuscrits, les cartes, etc… 
+                        <p>L'ÉQUIPE <br> Alexis Bibic : alexisbibic.github.io <br> Hugo Depagniat : hugodepagniat.dyjix.fr/<br> Charlie Delahousse : Ici-même</p>
+                      </p>
                     </div>
                   </div>
                 </div>
