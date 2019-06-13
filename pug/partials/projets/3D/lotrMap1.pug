@@ -1,5 +1,5 @@
 //- À MODIFIER
--var titre = "L'anneau unique (galerie)" // TITRE
+-var titre = "L'anneau unique" // TITRE
 -var titreShort = "lotrMap1" // UN SEUL MOT QUI DESIGNE LE CONTENU
 -var thumbnail = "assets/img/3D/lotrMap1.jpg" // MINIATURE
 
@@ -8,13 +8,16 @@ div.col-md-6.col-lg-4.thumbnail
   div.text-center
     p(href="#" data-toggle="modal" data-target="#" + titreShort)
       img.img-fluid(src=thumbnail)
-      p.text-center.text-light= titre
+      p.text-center.text-light= titre 
+      i.text-center.text-light= "galerie" 
+    
+      
 
 div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true")
   div.modal-dialog.modal-lg
     div.modal-content
       div.modal-header
-        h4.modal-title= titre
+        h4.modal-title= titre 
         button.close(type="button" data-dismiss="modal" aria-label="Close")
           span(aria-hidden="true") ×
       div.modal-body

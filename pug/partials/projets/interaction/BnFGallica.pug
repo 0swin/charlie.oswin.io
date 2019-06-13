@@ -1,5 +1,5 @@
 //- À MODIFIER
--var titre = "Data visulalisation pour Gallica, Bibliothèque nationale de France (projet)" // TITRE
+-var titre = "Data visulalisation pour Gallica" // TITRE
 -var titreShort = "datavisBnF" // UN SEUL MOT QUI DESIGNE LE CONTENU
 -var thumbnail = "assets/img/interaction/Datavis.jpg" // MINIATURE
 
@@ -9,6 +9,7 @@ div.col-md-6.col-lg-4.thumbnail
     p(href="#" data-toggle="modal" data-target="#" + titreShort)
       img.img-fluid(src=thumbnail)
       p.text-center.text-light= titre
+      i.text-center.text-light= "projet pour la BNF" 
 
 div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true")
   div.modal-dialog.modal-lg

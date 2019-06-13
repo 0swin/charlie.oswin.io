@@ -1,5 +1,5 @@
 //- À MODIFIER
--var titre = "Portraits noir et blanc (galerie)" // TITRE
+-var titre = "Portraits noir et blanc" // TITRE
 -var titreShort = "portraitsnb" // UN SEUL MOT QUI DESIGNE LE CONTENU
 -var thumbnail = "assets/img/photo/_1000065.jpg" // MINIATURE
 
@@ -9,6 +9,7 @@ div.col-md-6.col-lg-4.thumbnail
     p(href="#" data-toggle="modal" data-target="#" + titreShort)
       img.img-fluid(src=thumbnail)
       p.text-center.text-light= titre
+      i.text-center.text-light= "galerie" 
 
 div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true")
   div.modal-dialog.modal-lg

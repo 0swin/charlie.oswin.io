@@ -36,7 +36,8 @@ div.thumbnail {
   font-family: 'Roboto Mono', monospace;
   font-weight: bold;
   margin-bottom: 1rem;
-  letter-spacing: 0.05rem; }
+  letter-spacing: 0.05rem;
+  line-height: 0.5rem; }
   div.thumbnail:hover, div.thumbnail:active, div.thumbnail:focus {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
@@ -49,7 +50,7 @@ div.thumbnail {
     border-bottom: 1px solid #515151; }
     .modal-content .modal-header .close {
       color: #ffffff; }
-    .modal-content .modal-header .modal-title {
+    .modal-content .modal-header .modal-title p {
       font-family: 'Roboto Mono', monospace;
       font-weight: 500;
       color: #ffffff; }
@@ -57,7 +58,7 @@ div.thumbnail {
     font-family: 'Roboto Mono', monospace;
     font-weight: 500;
     margin-top: 2rem;
-    margin-bottom: 0;
+    margin-bottom: 0rem;
     color: #e6e7e8; }
   .modal-content .modal-body p, .modal-content .modal-body ul {
     font-family: 'Roboto Mono', monospace;
