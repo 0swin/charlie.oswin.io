@@ -9,7 +9,7 @@ div.col-md-6.col-lg-4.thumbnail
     p(href="#" data-toggle="modal" data-target="#" + titreShort)
       img.img-fluid(src=thumbnail)
       p.text-center.text-light= titre
-      i.text-center.text-light= "projet pour la BNF" 
+      c.text-center.text-light= "Projet pour la BNF" 
 
 div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true")
   div.modal-dialog.modal-lg
@@ -21,7 +21,7 @@ div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicM
       div.modal-body
         video(controls='' autoplay='' loop='' mute='').embed-responsive
           source(src="assets/img/interaction/video_presentation_crop.mp4" type="video/mp4")
-          
+
         //- À MODIFIER (CONTENU DE LA PAGE)
         h5 Le Projet
         p Notre client était l’organisme Gallica, affilié à la BNF (Bibliothèque Nationale Française). Gallica s’occupe de la numérisation et l’archivage des documents numériques détenu par la BNF. Nous devions filtrer les 5 millions de documents contenus dans l’API qui nous a été confiée et choisir comment représenter visuellement une partie de ces données.
@@ -29,7 +29,7 @@ div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicM
         img.img-fluid(src="assets/img/interaction/Datavis.jpg")
 
         h5 Nos Itérations 
-        p Tout d’abord nous avons du réfléchir à quelles données traiter. Notre choix s'est porté sur les documents vidéos.Nous avons cependant réalisés une solution applicable à tout les types de documents. Notre idée était de mettre en corrélation les dates de création des fichiers avec leurs dates d’ajout dans la base de données afin de montrer les périodes pendant lesquelles les ajouts de fichiers furent conséquents ainsi que celles où ils furent moindre. 
+        p Tout d’abord nous avons du réfléchir à quelles données traiter. Notre choix s'est porté sur les documents vidéos. Nous avons cependant réalisés une solution applicable à tout les types de documents. Notre idée était de mettre en corrélation les dates de création des fichiers avec leurs dates d’ajout dans la base de données afin de montrer les périodes pendant lesquelles les ajouts de fichiers furent conséquents ainsi que celles où ils furent moindre. 
         
         img.img-fluid(src="assets/img/interaction/code_gallica_datavis.png")
         
