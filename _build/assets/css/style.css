@@ -49,6 +49,8 @@ div.thumbnail {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05); }
+    div.thumbnail:hover a, div.thumbnail:active a, div.thumbnail:focus a {
+      text-decoration: none; }
 
 .modal-content {
   background-color: #333333;
