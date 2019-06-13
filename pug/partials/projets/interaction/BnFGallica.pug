@@ -7,7 +7,7 @@
 div.col-md-6.col-lg-4.thumbnail
   div.text-center
     a(href="#" data-toggle="modal" data-target="#" + titreShort)
-      img.img-fluid(src=thumbnail)
+      img.img-fluid.lazy(data-src-lazy=thumbnail)
       p.text-center.text-light= titre
       c.text-center.text-light Projet pour la BNF
 
@@ -19,11 +19,11 @@ div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicM
         button.close(type="button" data-dismiss="modal" aria-label="Close")
           span(aria-hidden="true") ×
       div.modal-body
+
+        //- À MODIFIER (CONTENU DE LA PAGE)
         video(controls='' autoplay='' loop='' mute='').embed-responsive
           source(src="assets/img/interaction/video_presentation_crop.webm" type="video/webm")
           source(src="assets/img/interaction/video_presentation_crop.mp4" type="video/mp4")
-
-        //- À MODIFIER (CONTENU DE LA PAGE)
         h5 Le Projet
         p Notre client était l’organisme Gallica, affilié à la BNF (Bibliothèque Nationale Française). Gallica s’occupe de la numérisation et l’archivage des documents numériques détenu par la BNF. Nous devions filtrer les 5 millions de documents contenus dans l’API qui nous a été confiée et choisir comment représenter visuellement une partie de ces données.
         

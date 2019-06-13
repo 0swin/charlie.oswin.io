@@ -77,3 +77,8 @@ div.thumbnail {
     color: #d1d3d4; }
     .modal-content .modal-body a:hover, .modal-content .modal-body a:focus {
       text-decoration: underline; }
+
+.collapsing {
+  -webkit-transition: height 450ms ease;
+  -o-transition: height 450ms ease;
+  transition: height 450ms ease; }

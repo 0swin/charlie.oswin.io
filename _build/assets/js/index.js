@@ -29,3 +29,10 @@ $('.modal').on("show.bs.modal", function(){
         $(this).attr('src', $(this).attr('data-src-lazy'));
     });
 });
+
+$('.collapse').on("show.bs.collapse", function(){
+  $(this).find(".lazy").each(function() {
+      $(this).attr('src', $(this).attr('data-src-lazy'));
+      
+  });
+});
