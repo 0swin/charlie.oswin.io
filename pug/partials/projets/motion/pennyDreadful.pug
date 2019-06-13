@@ -2,7 +2,6 @@
 -var titre = "Penny Dreadful - Séquence d'ouverture" // TITRE
 -var titreShort = "PennyDredfulOpening" // UN SEUL MOT QUI DESIGNE LE CONTENU
 -var thumbnail = "assets/img/motion/pennydreadful_thumbnail.jpg" // MINIATURE
--var videoLink = "https://player.vimeo.com/video/341528622"
 
 //- NE RIEN TOUCHER
 div.col-md-6.col-lg-4.thumbnail
@@ -20,7 +19,7 @@ div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicM
           span(aria-hidden="true") x
       div.modal-body
         div.embed-responsive.embed-responsive-16by9
-          iframe(src=videoLink frameborder="0" allowfullscreen)
+          iframe.img-fluid.lazy(data-src-lazy="https://player.vimeo.com/video/341528622" frameborder="0" allowfullscreen)
 
         //- À MODIFIER (CONTENU DE LA PAGE)
   
