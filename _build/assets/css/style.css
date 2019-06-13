@@ -27,26 +27,28 @@ div[aria-expanded="true"] svg path {
   #headingZero svg path {
     fill: white; }
 
-div.thumbnail p {
-  -webkit-transition: 0.3s -webkit-transform ease-out;
-  transition: 0.3s -webkit-transform ease-out;
-  -o-transition: 0.3s transform ease-out;
-  transition: 0.3s transform ease-out;
-  transition: 0.3s transform ease-out, 0.3s -webkit-transform ease-out;
-  font-family: 'Roboto Mono', monospace;
-  font-weight: bold;
-  letter-spacing: 0.05rem;
+div.thumbnail {
   margin-bottom: 1rem; }
-
-div.thumbnail c {
-  font-weight: 300;
-  font-style: italic;
-  letter-spacing: 0.05rem; }
-
-div.thumbnail:hover, div.thumbnail:active, div.thumbnail:focus {
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05); }
+  div.thumbnail img {
+    margin-bottom: 0.5rem; }
+  div.thumbnail p {
+    -webkit-transition: 0.3s -webkit-transform ease-out;
+    transition: 0.3s -webkit-transform ease-out;
+    -o-transition: 0.3s transform ease-out;
+    transition: 0.3s transform ease-out;
+    transition: 0.3s transform ease-out, 0.3s -webkit-transform ease-out;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    margin-bottom: 0; }
+  div.thumbnail c {
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 0.05rem; }
+  div.thumbnail:hover, div.thumbnail:active, div.thumbnail:focus {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05); }
 
 .modal-content {
   background-color: #333333;
