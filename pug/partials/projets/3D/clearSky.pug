@@ -2,7 +2,6 @@
 -var titre = "Clear Sky (galerie)" // TITRE
 -var titreShort = "clearSky" // UN SEUL MOT QUI DESIGNE LE CONTENU
 -var thumbnail = "assets/img/3D/clearSky1.jpg" // MINIATURE
--var videoLink = ""
 
 //- NE RIEN TOUCHER
 div.col-md-6.col-lg-4.thumbnail
@@ -20,6 +19,7 @@ div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicM
           span(aria-hidden="true") ×
       div.modal-body
         //- À MODIFIER (CONTENU DE LA PAGE)
+
         div.carousel.slide(id=titreShort+"Carousel" data-ride="carousel")
           div.carousel-inner
             div.carousel-item.active
@@ -30,7 +30,5 @@ div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicM
             span.carousel-control-prev-icon(aria-hidden="true")
           a.carousel-control-next(href="#"+titreShort+"Carousel" role="button" data-slide="next")
             span.carousel-control-next-icon(aria-hidden="true")
-
-        p
         
       

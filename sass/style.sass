@@ -41,17 +41,6 @@ div.thumbnail
 	&:hover, &:active, &:focus
 		transform: scale(1.05)
 
-#name
-	// animation-delay: 0s
-#motion
-	animation-delay: 200ms
-#interaction
-	animation-delay: 400ms
-#threed
-	animation-delay: 600ms
-#photography
-	animation-delay: 800ms
-
 .modal-content
 	background-color: #333333
 	color: white
@@ -59,11 +48,10 @@ div.thumbnail
 		border-bottom: 1px solid #515151
 		.close
 			color: #ffffff
-	.modal-title
-			font-family: 'Roboto Mono', monospace
-			font-weight: 500
-			color: #ffffff
-
+		.modal-title
+				font-family: 'Roboto Mono', monospace
+				font-weight: 500
+				color: #ffffff
 	.modal-body
 		h5
 			font-family: 'Roboto Mono', monospace
@@ -71,10 +59,15 @@ div.thumbnail
 			margin-top: 2rem
 			margin-bottom: 0
 			color: #e6e7e8
-
-		p
+		p, ul
 			font-family: 'Roboto Mono', monospace
 			font-weight: 300
-			margin-top: 1rem
-			margin-bottom: 2rem
+			margin-top: 2rem
+			margin-bottom: 1rem
 			color: #d1d3d4
+		a
+			color: #d1d3d4
+			&:hover, &:focus
+				text-decoration: underline
+
+

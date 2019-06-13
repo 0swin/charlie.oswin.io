@@ -2,8 +2,6 @@
 -var titre = "Data visulalisation pour Gallica, Bibliothèque nationale de France (projet)" // TITRE
 -var titreShort = "datavisBnF" // UN SEUL MOT QUI DESIGNE LE CONTENU
 -var thumbnail = "assets/img/interaction/Datavis.jpg" // MINIATURE
--var videoLink = "https://player.vimeo.com/video/341598170"
--var videoLink2 = "https://player.vimeo.com/video/341598170"
 
 //- NE RIEN TOUCHER
 div.col-md-6.col-lg-4.thumbnail
@@ -44,7 +42,12 @@ div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicM
         p Nous voulions présenter un concept d'installation interactive permettant aux visiteurs de la BNF d'apréhender l'immense travail que représente la mise en ligne des documents de la BNF vers Gallica. Une table interactive permettrait d’afficher uniquement les courbes liées aux dates séléctionées par l'uttilisateur. Cet installation pourrait être dérivée pour chaque type de document afin d'illustrer l’étendue de la base de donnée de Gallica.
         
         h5 L'Équipe
-        p Alexis Bibic : <span> alexisbibic.github.io </span> <br> Hugo Depagniat : <span> hugodepagniat.dyjix.fr </span> <br> Charlie Delahousse : <span>Ici-même</span>
+        ul.list-unstyled
+          li
+            a(href="alexisbibic.github.io") Alexis Bibic
+          li
+            a(href="hugodepagniat.dyjix.fr") Hugo Depagniat
+          li Charlie Delahousse 
     
         
       
