@@ -1,5 +1,5 @@
 //- À MODIFIER
--var titre = "Porte" // TITRE
+-var titre = "Portes ?" // TITRE
 -var titreShort = "porte" // UN SEUL MOT QUI DESIGNE LE CONTENU
 -var thumbnail = "assets/img/photo/_1000308.jpg" // MINIATURE
 
@@ -9,6 +9,7 @@ div.col-md-6.col-lg-4.thumbnail
     p(href="#" data-toggle="modal" data-target="#" + titreShort)
       img.img-fluid(src=thumbnail)
       p.text-center.text-light= titre
+      c.text-center.text-light= "Galerie"
 
 div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true")
   div.modal-dialog.modal-lg
@@ -20,7 +21,13 @@ div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicM
       div.modal-body
           
         //- À MODIFIER (CONTENU DE LA PAGE)
-        img.img-fluid(src="assets/img/photo/_1000308.jpg")
-    
-        
-      
+        div.carousel.slide(id=titreShort+"Carousel" data-ride="carousel")
+          div.carousel-inner
+            div.carousel-item.active
+              img.d-block.w-100(src="assets/img/photo/_1000308.jpg")
+            div.carousel-item
+              img.d-block.w-100(src="assets/img/photo/_1000129.jpg")
+          a.carousel-control-prev(href="#"+titreShort+"Carousel" role="button" data-slide="prev")
+            span.carousel-control-prev-icon(aria-hidden="true")
+          a.carousel-control-next(href="#"+titreShort+"Carousel" role="button" data-slide="next")
+            span.carousel-control-next-icon(aria-hidden="true")
