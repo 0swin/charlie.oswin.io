@@ -1,7 +1,7 @@
 //- À MODIFIER
--var titre = '"Doors"' // TITRE
--var titreShort = "portes" // UN SEUL MOT QUI DESIGNE LE CONTENU
--var thumbnail = "assets/img/photo/_1000308.jpg" // MINIATURE
+-var titre = "Chinatown" // TITRE
+-var titreShort = "chinatown" // UN SEUL MOT QUI DESIGNE LE CONTENU
+-var thumbnail = "assets/img/photo/_1040221.jpg" // MINIATURE
 
 //- NE RIEN TOUCHER
 div.col-md-6.col-lg-4.thumbnail
@@ -9,7 +9,7 @@ div.col-md-6.col-lg-4.thumbnail
     p(href="#" data-toggle="modal" data-target="#" + titreShort)
       img.img-fluid(src=thumbnail)
       p.text-center.text-light= titre
-      c.text-center.text-light= "Galerie"
+      c.text-center.text-light= "Galerie" 
 
 div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true")
   div.modal-dialog.modal-lg
@@ -19,15 +19,16 @@ div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicM
         button.close(type="button" data-dismiss="modal" aria-label="Close")
           span(aria-hidden="true") ×
       div.modal-body
-          
         //- À MODIFIER (CONTENU DE LA PAGE)
         div.carousel.slide(id=titreShort+"Carousel" data-ride="carousel")
           div.carousel-inner
             div.carousel-item.active
-              img.d-block.w-100(src="assets/img/photo/_1000308.jpg")
+              img.d-block.w-100(src="assets/img/photo/_1040225.jpg")
             div.carousel-item
-              img.d-block.w-100(src="assets/img/photo/_1000129.jpg")
+              img.d-block.w-100(src="assets/img/photo/_1040221.jpg")
           a.carousel-control-prev(href="#"+titreShort+"Carousel" role="button" data-slide="prev")
             span.carousel-control-prev-icon(aria-hidden="true")
           a.carousel-control-next(href="#"+titreShort+"Carousel" role="button" data-slide="next")
             span.carousel-control-next-icon(aria-hidden="true")
+  
+      

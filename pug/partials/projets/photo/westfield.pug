@@ -1,0 +1,23 @@
+-var titre = "Westfield World Trade Center" // TITRE
+-var titreShort = "westfield" // UN SEUL MOT QUI DESIGNE LE CONTENU
+-var thumbnail = "assets/img/photo/_1040066.jpg" // MINIATURE
+
+//- NE RIEN TOUCHER
+div.col-md-6.col-lg-4.thumbnail
+  div.text-center
+    p(href="#" data-toggle="modal" data-target="#" + titreShort)
+      img.img-fluid(src=thumbnail)
+      p.text-center.text-light= titre
+
+div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true")
+  div.modal-dialog.modal-lg
+    div.modal-content
+      div.modal-header
+        h4.modal-title= titre
+        button.close(type="button" data-dismiss="modal" aria-label="Close")
+          span(aria-hidden="true") ×
+      div.modal-body
+          
+        //- À MODIFIER (CONTENU DE LA PAGE)
+        img.img-fluid(src="assets/img/photo/_1040066.jpg")
+      
