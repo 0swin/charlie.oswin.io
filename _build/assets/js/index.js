@@ -23,3 +23,9 @@ $('.modal').on('hide.bs.modal', function() {
   var memory = $(this).html();
   $(this).html(memory);
 });
+
+$('.modal').on("show.bs.modal", function(){
+    $(this).find(".lazy").each(function() {
+        $(this).attr('src', $(this).attr('data-src-lazy'));
+    });
+});
