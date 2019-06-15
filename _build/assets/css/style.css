@@ -1,13 +1,13 @@
 div.card {
-  background-color: black; }
+  background-color: rgba(0, 0, 0, 0); }
   div.card div.card-header {
     height: calc(100vh / 6);
-    background-color: black; }
+    background-color: rgba(0, 0, 0, 0); }
     div.card div.card-header div {
       height: 100%; }
 
 body {
-  background-color: #000; }
+  background-color: #111111; }
 
 svg {
   height: 100%;

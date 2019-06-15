@@ -1,3 +1,4 @@
+var canvas;
 var inc = 0.1;
 var scl = 10;
 var cols, rows;
@@ -16,7 +17,9 @@ resizeCanvas(windowWidth, windowHeight);
 
 function setup(){
   pixelDensity(1);
-  createCanvas(windowWidth, windowHeight);
+  canvas = createCanvas(windowWidth, windowHeight);
+  canvas.position(0,0);
+  canvas.style('z-index','-1');
   cols = floor(width / scl);
   rows = floor(height / scl);
   fr = createP();
@@ -72,5 +75,4 @@ function draw(){
   particles[i].show();
 }
 
-  fr.html(floor(frameRate()));
 }
