@@ -19,6 +19,7 @@ function setup(){
   pixelDensity(1);
   canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0,0);
+  canvas.parent('myContainer');
   canvas.style('z-index','-1');
   cols = floor(width / scl);
   rows = floor(height / scl);
