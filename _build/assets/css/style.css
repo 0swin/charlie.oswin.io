@@ -88,7 +88,6 @@ div.thumbnail {
 #p5Container {
   position: fixed; }
   #p5Container canvas {
-    width: 300px;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0; }
