@@ -7,29 +7,13 @@ meta(http-equiv="X-UA-Compatible", content="ie=edge")
 title Charlie Delahousse - Portfolio
 link(rel="stylesheet", href="assets/css/bootstrap.min.css")
 link(rel="stylesheet", href="assets/css/style.css")
+link(rel="stylesheet" href="assets/css/style.css")
 link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,500&display=swap")
-<script language="javascript" type="text/javascript" src="../p5js/particle.js"></script>
-<script language="javascript" type="text/javascript" src="../p5js/p5.min.js"></script>
-<script language="javascript" type="text/javascript" src="../p5js/p5.dom.js"></script>
-<script language="javascript" type="text/javascript" src="../p5js/sketch.js"></script></style><script src="../p5js/sketch.js"></script>
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-<script src="../p5js/sketch.js"></script>
-<div id="myContainer"> </div>
-style.
-     #myContainer {
-       position: fixed
-     }
-     #content {
-       width: 300px
-       position: absolute
-       top: 0
-       left: 0
-     }
 
-   
-.container-fluid
+div#p5Container
+
+div.container-fluid
   #accordionExample.accordion
-
     #name.card
       #headingZero.card-header
         include partials/svg/name.pug
@@ -39,9 +23,9 @@ style.
         div.collapsed(data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne")
           include partials/svg/motion.pug
       #collapseOne.collapse(aria-labelledby="headingOne" data-parent="#accordionExample")
-        .card-body
-          .container-fuid
-            .row
+        div.card-body
+          div.container-fuid
+            div.row
               include partials/projets/motion/anamnesis.pug
               include partials/projets/motion/pennyDreadful.pug
 
@@ -50,9 +34,9 @@ style.
         div.collapsed(data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo")
           include partials/svg/interaction.pug
       #collapseTwo.collapse(aria-labelledby="headingTwo" data-parent="#accordionExample")
-        .card-body
-          .container-fuid
-            .row
+        div.card-body
+          div.container-fuid
+            div.row
               include partials/projets/interaction/BnFGallica.pug
 
     #threed.card
@@ -60,9 +44,9 @@ style.
         div.collapsed(ype="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree")
           include partials/svg/3dart.pug
       #collapseThree.collapse(aria-labelledby="headingThree" data-parent="#accordionExample")
-        .card-body
-          .container-fuid
-            .row
+        div.card-body
+          div.container-fuid
+            div.row
               include partials/projets/3D/lotrMap1.pug
               include partials/projets/3D/angel.pug
               include partials/projets/3D/clearSky.pug
@@ -73,9 +57,9 @@ style.
         div.collapsed(data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour")
           include partials/svg/photography.pug
       #collapseFour.collapse(aria-labelledby="headingFour" data-parent="#accordionExample")
-        .card-body
-          .container-fuid
-            .row
+        div.card-body
+          div.container-fuid
+            div.row
               include partials/projets/photo/portraits.pug
               include partials/projets/photo/MoMa.pug
               include partials/projets/photo/porte.pug
@@ -86,11 +70,12 @@ style.
               include partials/projets/photo/westfield.pug
               include partials/projets/photo/manhattanSunset.pug
 
-
-
-
-
 script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js")
 script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js")
 script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js")
 script(src="assets/js/index.js")
+script(src="assets/p5js/particle.js")
+script(src="assets/p5js/p5.min.js")
+script(src="assets/p5js/p5.dom.js")
+script(src="assets/p5js/sketch.js")
+script(src="assets/p5js/sketch.js")
