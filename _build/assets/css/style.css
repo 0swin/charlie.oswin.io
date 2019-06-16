@@ -84,3 +84,11 @@ div.thumbnail {
   -webkit-transition: height 450ms ease;
   -o-transition: height 450ms ease;
   transition: height 450ms ease; }
+
+#p5Container {
+  position: fixed; }
+  #p5Container canvas {
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0; }
