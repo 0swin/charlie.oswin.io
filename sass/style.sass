@@ -18,18 +18,22 @@ svg
 	max-width: 80vw
 	path
 		stroke: white
+		fill-opacity: 0
+		fill: red
 		stroke-width: 1px
 
 div[aria-expanded="true"]
 	svg
 		path
 			fill: white
+			fill-opacity: 10
 			transform: fill 1s ease-out
 
 #headingZero
 	height: calc(100vh / 6 * 2)
 	svg
 		path
+			fill-opacity: 1
 			fill: white
 
 div.thumbnail
@@ -85,7 +89,7 @@ div.thumbnail
 .collapsing
 	transition: height 450ms ease
 
-	
+
 #p5Container
 	position: fixed
 	canvas

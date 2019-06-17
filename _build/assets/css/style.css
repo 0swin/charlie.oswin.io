@@ -14,10 +14,13 @@ svg {
   max-width: 80vw; }
   svg path {
     stroke: white;
+    fill-opacity: 0;
+    fill: red;
     stroke-width: 1px; }
 
 div[aria-expanded="true"] svg path {
   fill: white;
+  fill-opacity: 10;
   -webkit-transform: fill 1s ease-out;
   -ms-transform: fill 1s ease-out;
   transform: fill 1s ease-out; }
@@ -25,6 +28,7 @@ div[aria-expanded="true"] svg path {
 #headingZero {
   height: calc(100vh / 6 * 2); }
   #headingZero svg path {
+    fill-opacity: 1;
     fill: white; }
 
 div.thumbnail {
