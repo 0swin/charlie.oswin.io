@@ -25,7 +25,7 @@ function setup(){
   rows = floor(height / scl);
   fr = createP();
   flowfield = new Array(cols*rows);
-  for (var i = 0; i < 50; i++){
+  for (var i = 0; i < 20; i++){
     particles[i] = new Particle();
   }
 

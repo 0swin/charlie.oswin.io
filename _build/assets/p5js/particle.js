@@ -3,7 +3,7 @@ function Particle() {
   this.vel = createVector(0, 0);
   this.acc = createVector(0, 0);
 
-  this.maxspeed = 2;
+  this.maxspeed = 10;
   this.h = 120;
 
   this.strkW = windowHeight*0.002;
