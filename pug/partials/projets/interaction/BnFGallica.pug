@@ -26,16 +26,21 @@ div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicM
           source(src="assets/img/interaction/video_presentation_crop.mp4" type="video/mp4")
         h5 Le Projet
         p Notre client était l’organisme Gallica, affilié à la BNF (Bibliothèque Nationale Française). Gallica s’occupe de la numérisation et l’archivage des documents numériques détenu par la BNF. Nous devions filtrer les 5 millions de documents contenus dans l’API qui nous a été confiée et choisir comment représenter visuellement une partie de ces données.
+        <br>
+        
         
         img.img-fluid.lazy(data-src-lazy="assets/img/interaction/Datavis.jpg")
 
         h5 Nos Itérations 
-        p Tout d’abord nous avons du réfléchir à quelles données traiter. Notre choix s'est porté sur les documents vidéos. Nous avons cependant réalisés une solution applicable à tout les types de documents. Notre idée était de mettre en corrélation les dates de création des fichiers avec leurs dates d’ajout dans la base de données afin de montrer les périodes pendant lesquelles les ajouts de fichiers furent conséquents ainsi que celles où ils furent moindre. 
+        p Tout d’abord nous avons du réfléchir à quelles données traiter. Notre choix s'est porté sur les documents vidéos. Nous avons cependant réalisés une solution applicable à tout les types de documents. Notre idée était de mettre en corrélation les dates de création des fichiers avec leurs dates d’ajout dans la base de données afin de montrer les périodes pendant lesquelles les ajouts de fichiers furent conséquents ainsi que celles où ils furent moindre.
+        <br>
         
         img.img-fluid.lazy(data-src-lazy="assets/img/interaction/code_gallica_datavis.png")
         
         h5 La Réalisation
         p Notre idée en tête, il fallait maintenant la réaliser. Nous avons donc visualisé, en codant, ces données. Pour cela nous avons reliés, avec des courbes de Bézier, les dates de créations des documents sur le demi-cercle de droite avec leur date d’ajout ou de modification sur le demi-cercle de gauche. Nous avons ensuite animé cette visualisation afin d'illustrer la perpétuelle évolution des données. L'animation permis aussi d'accroître la lisibilité au niveau des nœuds de données les plus dense. Tout cela fut réalisé grâce à la bibliothèque JavaScript p5.js.
+        <br>
+        
         
         video(controls='' autoplay='' loop='' mute='').embed-responsive.embed-responsive-16by9
           source(src="assets/img/interaction/sequence_projection.webm" type="video/webm")
@@ -43,6 +48,7 @@ div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicM
             
         h5  L'Installation 
         p Nous voulions présenter un concept d'installation interactive permettant aux visiteurs de la BNF d'apréhender l'immense travail que représente la mise en ligne des documents de la BNF vers Gallica. Une table interactive permettrait d’afficher uniquement les courbes liées aux dates séléctionées par l'uttilisateur. Cet installation pourrait être dérivée pour chaque type de document afin d'illustrer l’étendue de la base de donnée de Gallica.
+        
         
         h5 L'Équipe
         ul.list-unstyled
