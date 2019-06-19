@@ -15,7 +15,7 @@ svg {
   svg path {
     stroke: white;
     fill-opacity: 0;
-    fill: red;
+    fill: white;
     stroke-width: 1px; }
 
 div[aria-expanded="true"] svg path {
@@ -56,9 +56,15 @@ div.thumbnail {
     div.thumbnail:hover a, div.thumbnail:active a, div.thumbnail:focus a {
       text-decoration: none; }
 
+.modal-lg {
+  width: 100vw !important;
+  max-width: none;
+  margin: 0; }
+
 .modal-content {
   background-color: #333333;
-  color: white; }
+  color: white;
+  min-height: 100vh !important; }
   .modal-content .modal-header {
     border-bottom: 1px solid #515151; }
     .modal-content .modal-header .close {

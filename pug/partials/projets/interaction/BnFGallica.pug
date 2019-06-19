@@ -1,5 +1,5 @@
 //- À MODIFIER
--var titre = "Data visulalisation pour Gallica" // TITRE
+-var titre = "Data visualisation pour Gallica" // TITRE
 -var titreShort = "datavisBnF" // UN SEUL MOT QUI DESIGNE LE CONTENU
 -var thumbnail = "assets/img/interaction/Datavis.jpg" // MINIATURE
 
@@ -14,11 +14,11 @@ div.col-md-6.col-lg-4.thumbnail
 div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true")
   div.modal-dialog.modal-lg
     div.modal-content
-      div.modal-header
+      div.modal-header.container
         h4.modal-title= titre
         button.close(type="button" data-dismiss="modal" aria-label="Close")
           span(aria-hidden="true") ×
-      div.modal-body
+      div.modal-body.container
 
         //- À MODIFIER (CONTENU DE LA PAGE)
         video(controls='' autoplay='' loop='' mute='').embed-responsive

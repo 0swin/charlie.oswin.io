@@ -19,7 +19,7 @@ svg
 	path
 		stroke: white
 		fill-opacity: 0
-		fill: red
+		fill: white
 		stroke-width: 1px
 
 div[aria-expanded="true"]
@@ -56,9 +56,15 @@ div.thumbnail
 		a
 			text-decoration: none
 
+.modal-lg
+	width: 100vw!important
+	max-width: none
+	margin: 0
+
 .modal-content
 	background-color: #333333
 	color: white
+	min-height: 100vh!important
 	.modal-header
 		border-bottom: 1px solid #515151
 		.close
@@ -68,7 +74,6 @@ div.thumbnail
 				font-family: 'Roboto Mono', monospace
 				font-weight: 500
 				color: #ffffff
-
 	.modal-body
 		h5
 			font-family: 'Roboto Mono', monospace

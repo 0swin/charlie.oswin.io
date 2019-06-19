@@ -13,22 +13,20 @@ div.col-md-6.col-lg-4.thumbnail
 div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true")
   div.modal-dialog.modal-lg
     div.modal-content
-      div.modal-header
+      div.modal-header.container
         h4.modal-title= titre
         button.close(type="button" data-dismiss="modal" aria-label="Close")
           span(aria-hidden="true") ×
-      div.modal-body
+      div.modal-body.container
         div.embed-responsive.embed-responsive-16by9
           iframe.img-fluid.lazy(data-src-lazy="https://player.vimeo.com/video/342811450" frameborder="0" allowfullscreen)
         //- À MODIFIER (CONTENU DE LA PAGE)
 
-      
-        p         
         ul.list-unstyled
           li Musique&nbsp;:
           li MusicToday80
           li Attribution 3.0 Unported (CC BY 3.0)
           li  Music provided by Free Vibes
     
-        
-      
+            
+          
