@@ -1,9 +1,9 @@
-div.card {
+.card {
   background-color: rgba(0, 0, 0, 0); }
-  div.card div.card-header {
+  .card div.card-header {
     height: calc(100vh / 6);
     background-color: rgba(0, 0, 0, 0); }
-    div.card div.card-header div {
+    .card div.card-header div {
       height: 100%; }
 
 body {
@@ -18,7 +18,7 @@ svg {
     fill: white;
     stroke-width: 1px; }
 
-div[aria-expanded="true"] svg path {
+[aria-expanded="true"] svg path {
   fill: white;
   fill-opacity: 10;
   -webkit-transform: fill 1s ease-out;
@@ -31,11 +31,11 @@ div[aria-expanded="true"] svg path {
     fill-opacity: 1;
     fill: white; }
 
-div.thumbnail {
+.thumbnail {
   margin-bottom: 1rem; }
-  div.thumbnail img {
+  .thumbnail img {
     margin-bottom: 0.5rem; }
-  div.thumbnail p {
+  .thumbnail p {
     -webkit-transition: 0.3s -webkit-transform ease-out;
     transition: 0.3s -webkit-transform ease-out;
     -o-transition: 0.3s transform ease-out;
@@ -45,49 +45,50 @@ div.thumbnail {
     font-weight: bold;
     letter-spacing: 0.05rem;
     margin-bottom: 0; }
-  div.thumbnail c {
+  .thumbnail c {
     font-weight: 300;
     font-style: italic;
     letter-spacing: 0.05rem; }
-  div.thumbnail:hover, div.thumbnail:active, div.thumbnail:focus {
+  .thumbnail:hover, .thumbnail:active, .thumbnail:focus {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05); }
-    div.thumbnail:hover a, div.thumbnail:active a, div.thumbnail:focus a {
+    .thumbnail:hover a, .thumbnail:active a, .thumbnail:focus a {
       text-decoration: none; }
 
 .modal-lg {
   width: 100vw !important;
   max-width: none;
   margin: 0; }
+  .modal-lg .modal-content {
+    min-height: 100vh !important; }
 
-.modal-content {
+.modal .modal-content {
   background-color: #333333;
-  color: white;
-  min-height: 100vh !important; }
-  .modal-content .modal-header {
+  color: white; }
+  .modal .modal-content .modal-header {
     border-bottom: 1px solid #515151; }
-    .modal-content .modal-header .close {
+    .modal .modal-content .modal-header .close {
       color: #ffffff; }
-    .modal-content .modal-header .modal-title p {
+    .modal .modal-content .modal-header .modal-title p {
       font-family: 'Roboto Mono', monospace;
       font-weight: 500;
       color: #ffffff; }
-  .modal-content .modal-body h5 {
+  .modal .modal-content .modal-body h5 {
     font-family: 'Roboto Mono', monospace;
     font-weight: 500;
     margin-top: 2rem;
     margin-bottom: 0rem;
     color: #e6e7e8; }
-  .modal-content .modal-body p, .modal-content .modal-body ul {
+  .modal .modal-content .modal-body p, .modal .modal-content .modal-body ul {
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
     margin-top: 2rem;
     margin-bottom: 1rem;
     color: #d1d3d4; }
-  .modal-content .modal-body a {
+  .modal .modal-content .modal-body a {
     color: #d1d3d4; }
-    .modal-content .modal-body a:hover, .modal-content .modal-body a:focus {
+    .modal .modal-content .modal-body a:hover, .modal .modal-content .modal-body a:focus {
       text-decoration: underline; }
 
 .collapsing {
@@ -101,3 +102,36 @@ div.thumbnail {
     position: fixed;
     top: 0;
     left: 0; }
+
+.social-icons {
+  position: fixed;
+  bottom: 3em;
+  right: 4em;
+  z-index: 2; }
+  .social-icons ul li {
+    font-size: 1.5rem;
+    margin-left: 1rem; }
+    .social-icons ul li a {
+      color: white; }
+  @media (max-width: 991px) {
+    .social-icons {
+      bottom: 0.5rem;
+      right: 1rem; }
+      .social-icons ul li {
+        font-size: 1.5rem;
+        margin-left: 1rem; } }
+
+.about-me a {
+  color: white;
+  position: fixed;
+  top: 2.5em;
+  right: 4em;
+  font-size: 1.5rem;
+  z-index: 2; }
+  @media (max-width: 991px) {
+    .about-me a {
+      top: 0.5rem;
+      right: 1rem; } }
+
+.about-me .modal .modal-dialog {
+  z-index: 2000; }

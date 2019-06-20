@@ -1,0 +1,16 @@
+-var titreShort = "about"
+
+a(href="#" data-toggle="modal" data-target="#" + titreShort) À propos
+
+div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true")
+  div.modal-dialog.modal-md
+    div.modal-content
+      div.modal-header.container
+        h4.modal-title À propos de moi
+        button.close(type="button" data-dismiss="modal" aria-label="Close")
+          span(aria-hidden="true") ×
+      div.modal-body.container
+          
+        //- À MODIFIER (CONTENU DE LA PAGE)
+        img.img-fluid.lazy(data-src-lazy="assets/img/3D/angel.jpg")
+        p 0 en action de com

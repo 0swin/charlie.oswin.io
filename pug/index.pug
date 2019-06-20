@@ -7,11 +7,22 @@ meta(http-equiv="X-UA-Compatible", content="ie=edge")
 title Charlie Delahousse - Portfolio
 link(rel="stylesheet", href="assets/css/bootstrap.min.css")
 link(rel="stylesheet", href="assets/css/style.css")
-link(rel="stylesheet" href="assets/css/style.css")
 link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,500&display=swap")
+link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+
 
 div#p5Container
-
+div.about-me
+  include partials/about-me.pug
+div.social-icons
+  ul.list-inline
+    li.list-inline-item
+      a(href="#").fa.fa-instagram 
+    li.list-inline-item
+      a(href="#").fa.fa-github 
+    li.list-inline-item
+      a(href="#").fa.fa-linkedin 
+    
 div.container-fluid
   #accordionExample.accordion
     #name.card
@@ -78,5 +89,4 @@ script(src="assets/js/index.js")
 script(src="assets/p5js/particle.js")
 script(src="assets/p5js/p5.min.js")
 script(src="assets/p5js/p5.dom.js")
-script(src="assets/p5js/sketch.js")
 script(src="assets/p5js/sketch.js")

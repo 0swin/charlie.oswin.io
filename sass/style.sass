@@ -2,7 +2,7 @@
 // *
 //   outline: solid 2px rgba(0, 250, 250, 0.15) !important
 
-div.card
+.card
 	background-color: rgba(0, 0, 0, 0)
 	div.card-header
 		height: calc(100vh / 6)
@@ -22,7 +22,7 @@ svg
 		fill: white
 		stroke-width: 1px
 
-div[aria-expanded="true"]
+[aria-expanded="true"]
 	svg
 		path
 			fill: white
@@ -36,7 +36,7 @@ div[aria-expanded="true"]
 			fill-opacity: 1
 			fill: white
 
-div.thumbnail
+.thumbnail
 	margin-bottom: 1rem
 	img
 		margin-bottom: 0.5rem
@@ -60,37 +60,39 @@ div.thumbnail
 	width: 100vw!important
 	max-width: none
 	margin: 0
+	.modal-content
 
-.modal-content
-	background-color: #333333
-	color: white
-	min-height: 100vh!important
-	.modal-header
-		border-bottom: 1px solid #515151
-		.close
-			color: #ffffff
-		.modal-title
-			p
+		min-height: 100vh!important
+.modal
+	.modal-content
+		background-color: #333333
+		color: white
+		.modal-header
+			border-bottom: 1px solid #515151
+			.close
+				color: #ffffff
+			.modal-title
+				p
+					font-family: 'Roboto Mono', monospace
+					font-weight: 500
+					color: #ffffff
+		.modal-body
+			h5
 				font-family: 'Roboto Mono', monospace
 				font-weight: 500
-				color: #ffffff
-	.modal-body
-		h5
-			font-family: 'Roboto Mono', monospace
-			font-weight: 500
-			margin-top: 2rem
-			margin-bottom: 0rem
-			color: #e6e7e8
-		p, ul
-			font-family: 'Roboto Mono', monospace
-			font-weight: 300
-			margin-top: 2rem
-			margin-bottom: 1rem
-			color: #d1d3d4
-		a
-			color: #d1d3d4
-			&:hover, &:focus
-				text-decoration: underline
+				margin-top: 2rem
+				margin-bottom: 0rem
+				color: #e6e7e8
+			p, ul
+				font-family: 'Roboto Mono', monospace
+				font-weight: 300
+				margin-top: 2rem
+				margin-bottom: 1rem
+				color: #d1d3d4
+			a
+				color: #d1d3d4
+				&:hover, &:focus
+					text-decoration: underline
 
 .collapsing
 	transition: height 450ms ease
@@ -102,3 +104,38 @@ div.thumbnail
 		position: fixed
 		top: 0
 		left: 0
+
+.social-icons
+	position: fixed
+	bottom: 3em
+	right: 4em
+	z-index: 2
+	ul
+		li
+			font-size: 1.5rem
+			margin-left: 1rem
+			a
+				color: white
+			
+	@media (max-width: 991px)
+		bottom: 0.5rem
+		right: 1rem
+		ul
+			li
+				font-size: 1.5rem
+				margin-left: 1rem
+
+.about-me
+	a
+		color: white
+		position: fixed
+		top: 2.5em
+		right: 4em
+		font-size: 1.5rem
+		z-index: 2
+		@media (max-width: 991px)
+			top: 0.5rem
+			right: 1rem
+	.modal
+		.modal-dialog
+			z-index: 2000
