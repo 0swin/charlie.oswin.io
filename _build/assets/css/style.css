@@ -5,6 +5,11 @@
     background-color: rgba(0, 0, 0, 0); }
     .card div.card-header div {
       height: 100%; }
+    .card div.card-header:hover {
+      cursor: pointer; }
+      .card div.card-header:hover svg path {
+        stroke: white;
+        fill-opacity: 1; }
 
 body {
   background-color: #111111; }
