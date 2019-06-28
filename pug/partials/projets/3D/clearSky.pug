@@ -9,7 +9,7 @@ div.col-md-6.col-lg-4.thumbnail
     a(href="#" data-toggle="modal" data-target="#" + titreShort)
       img.img-fluid.lazy(data-src-lazy=thumbnail)
       p.text-center.text-light= titre
-      c.text-center.text-light= "Galerie" 
+      c.text-center.text-light Galerie, Texturing procédural
 
 div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true")
   div.modal-dialog.modal-lg
@@ -31,5 +31,19 @@ div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicM
             span.carousel-control-prev-icon(aria-hidden="true")
           a.carousel-control-next(href="#"+titreShort+"Carousel" role="button" data-slide="next")
             span.carousel-control-next-icon(aria-hidden="true")
+    
+    
+      div.modal-body.container
+        h5 Texturing  
+        p 
+        
+        p J'ai réalisé le Texturing de cette image sur Octane, à l'aide du node editor. La texture de neige est entièrement procédural, c'est à dire qu'elle est réalisée uniquement grâce à des calculs mathématiques effectués par le Sofware (ici Cinema4D et Octane).Cela permet un plus grand control de la texture et la possibilité de l'appliquer sur n'importe quelle surface.
+        img.img-fluid.lazy(data-src-lazy="assets/img/3D/clearSkyNode.jpg")
+
+        p la texture de roche quand à elle a nécessité l'uttilisation d'image pré-existante.
+        p Entre la texture de neige et la texture de roche, une version alternative, et reflétant la lumière, de la texture de neige, est présente. Elle sert à simuler la fonte de cette dernière au contact de la dite roche.
+        p La map de relief de la montagne a été réalisé grâce à World Creator.
+      img.img-fluid.lazy(data-src-lazy="assets/img/3D/clearSkyTEX.jpg")
+
         
       
