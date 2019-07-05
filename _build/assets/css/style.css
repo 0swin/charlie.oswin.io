@@ -126,15 +126,19 @@ svg {
         font-size: 1.5rem;
         margin-left: 1rem; } }
 
-.about-me a {
+.about-me ul {
   color: white;
   position: fixed;
   top: 2.5em;
   right: 4em;
   font-size: 1.5rem;
   z-index: 2; }
+  .about-me ul li {
+    padding-left: 1em; }
+    .about-me ul li a {
+      color: white; }
   @media (max-width: 991px) {
-    .about-me a {
+    .about-me ul {
       top: 0.5rem;
       right: 1rem; } }
 
