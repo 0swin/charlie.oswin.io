@@ -1,0 +1,34 @@
+//- À MODIFIER
+-var titre = "Inception Title Sequence" // TITRE
+-var titreShort = "Inception" // UN SEUL MOT QUI DESIGNE LE CONTENU
+-var thumbnail = "assets/img/motion/Inception_thumbnail.jpg" // MINIATURE
+
+//- NE RIEN TOUCHER
+div.col-md-6.col-lg-4.thumbnail
+  div.text-center
+    a(href="#" data-toggle="modal" data-target="#" + titreShort)
+      img.img-fluid.lazy(data-src-lazy=thumbnail)
+      p.text-center.text-light= titre
+
+div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true")
+  div.modal-dialog.modal-lg
+    div.modal-content
+      div.modal-header.container
+        h4.modal-title= titre
+        button.close(type="button" data-dismiss="modal" aria-label="Close")
+          span(aria-hidden="true") ×
+      div.modal-body.container
+        //- À MODIFIER (CONTENU DE LA PAGE)
+
+        div.embed-responsive.embed-responsive-16by9
+          iframe.img-fluid.lazy(data-src-lazy="https://player.vimeo.com/video/414736118" frameborder="0" allowfullscreen)
+        p Title Sequence pour le film Inception de Christopher Nolan.
+        ul.list-unstyled
+    
+        ul.list-unstyled
+          li Musique&nbsp;:
+          li Time - Hans Zimmer
+      
+    
+        
+      
