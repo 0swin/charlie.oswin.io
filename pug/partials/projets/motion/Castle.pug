@@ -1,0 +1,34 @@
+//- À MODIFIER
+-var titre = "Flambeau - Projection Mapping" // TITRE
+-var titreShort = "Flambeau" // UN SEUL MOT QUI DESIGNE LE CONTENU
+-var thumbnail = "assets/img/motion/Castle_thumbnail.jpg" // MINIATURE
+
+//- NE RIEN TOUCHER
+div.col-md-6.col-lg-4.thumbnail
+  div.text-center
+    a(href="#" data-toggle="modal" data-target="#" + titreShort)
+      img.img-fluid.lazy(data-src-lazy=thumbnail)
+      p.text-center.text-light= titre
+
+div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true")
+  div.modal-dialog.modal-lg
+    div.modal-content
+      div.modal-header.container
+        h4.modal-title= titre
+        button.close(type="button" data-dismiss="modal" aria-label="Close")
+          span(aria-hidden="true") ×
+      div.modal-body.container
+        //- À MODIFIER (CONTENU DE LA PAGE)
+
+        div.embed-responsive.embed-responsive-16by9
+          iframe.img-fluid.lazy(data-src-lazy="https://player.vimeo.com/video/553953475" frameborder="0" allowfullscreen)
+        p Projection mapping réalisé dans le cadre d'un projet étudiant de revalorisation du patrimoine chatelain français, au travers du motion design.
+        ul.list-unstyled
+    
+        ul.list-unstyled
+          li Projet réalisé avec : Alexis Bibic
+       
+      
+    
+        
+      

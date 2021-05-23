@@ -17,24 +17,35 @@
 					fill-opacity: 1
 
 body
-	background-color: #111111
+	background-color: #0a0a33
+	font-family: 'Inter', sans-serif
+	font-weight: 900
+
 
 svg
-	height: 100%
+	height: 60%
 	max-width: 80vw
+	margin-left: 40px
+	margin-top: 80px
+
 	path
 		stroke: white
 		fill-opacity: 0
 		fill: white
 		stroke-width: 1px
-		transition: fill-opacity 0.3s ease-out
+		transition: fill-opacity .4s ease-out
+	&:hover
+		transform: scale(0.95)
+		transform-origin: center left
+		transition: transform .8s ease-out
+
 
 [aria-expanded="true"]
 	svg
 		path
 			fill: white
 			fill-opacity: 1
-			transition: fill-opacity 0.3s ease-out
+			transition: fill-opacity .4s ease-out
 
 #headingZero
 	height: calc(100vh / 6 * 2)
@@ -44,22 +55,24 @@ svg
 			fill: white
 
 .thumbnail
-	margin-bottom: 5rem
+	margin-top: 5rem
+
 	img
 		margin-bottom: 0.5rem
 		max-height: 400px
 	p
 		transition: 0.3s transform ease-out
-		font-family: 'Roboto Mono', monospace
-		font-weight: bold
+		font-family: 'Inter', sans-serif
+		font-weight: 900
 		letter-spacing: 0.05rem
 	c
-		font-weight: 300
+		font-weight: 400
 		font-style: italic
 		letter-spacing: 0.05rem
 
 	&:hover, &:active, &:focus
 		transform: scale(1.05)
+		transition: .6s transform ease-out
 		a
 			text-decoration: none
 
@@ -78,20 +91,19 @@ svg
 			.close
 				color: #ffffff
 			.modal-title
-				p
-					font-family: 'Roboto Mono', monospace
-					font-weight: 500
-					color: #ffffff
+				font-family: 'Inter', sans-serif
+				font-weight: 900
+				color: #ffffff
 		.modal-body
 			h5
-				font-family: 'Roboto Mono', monospace
-				font-weight: 500
+				font-family: 'Inter', sans-serif
+				font-weight: 600
 				margin-top: 2rem
 				margin-bottom: 0rem
 				color: #e6e7e8
 			p, ul
-				font-family: 'Roboto Mono', monospace
-				font-weight: 300
+				font-family: 'Inter', sans-serif
+				font-weight: 400
 				margin-top: 2rem
 				margin-bottom: 1rem
 				color: #d1d3d4

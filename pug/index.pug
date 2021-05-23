@@ -10,6 +10,11 @@ link(rel="stylesheet", href="assets/css/style.css")
 link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,500&display=swap")
 link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
 
+link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;900&display=swap")
+
+//- <link rel="preconnect" href="https://fonts.gstatic.com">
+//- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;900&display=swap" rel="stylesheet">
+
 
 div#p5Container
 div.about-me
@@ -37,12 +42,15 @@ div.container-fluid
         div.card-body
           div.container-fuid
             div.row
+              //- include partials/projets/motion/DrPepper.pug
+              //- include partials/projets/motion/anamnesis.pug
+              include partials/projets/motion/showreel.pug
+              include partials/projets/motion/Xiaomi.pug
               include partials/projets/motion/Subtile.pug
               include partials/projets/motion/Inception.pug
-              include partials/projets/motion/DrPepper.pug
-              include partials/projets/motion/showreel.pug
-              include partials/projets/motion/anamnesis.pug
+              include partials/projets/motion/Castle.pug
               include partials/projets/motion/pennyDreadful.pug
+              include partials/projets/motion/Charon.pug
 
     //- #interaction.card
     //-   #headingTwo.card-header
@@ -62,15 +70,16 @@ div.container-fluid
         div.card-body
           div.container-fuid
             div.row
-              include partials/projets/3D/Clouds_1.pug
-              include partials/projets/3D/Clouds_2.pug
-              include partials/projets/3D/Clouds_3.pug
+              //- include partials/projets/3D/Clouds_1.pug
+              //- include partials/projets/3D/Clouds_2.pug
+              //- include partials/projets/3D/Clouds_3.pug
+              //- include partials/projets/3D/skulls.pug
+              include partials/projets/3D/lotrMap1.pug
               include partials/projets/3D/Eve.pug
               include partials/projets/3D/LeSaloon.pug
               include partials/projets/3D/angel.pug
               include partials/projets/3D/clearSky.pug
-              include partials/projets/3D/lotrMap1.pug
-              include partials/projets/3D/skulls.pug
+
 
     #photography.card
       #headingFour.card-header
@@ -80,12 +89,12 @@ div.container-fluid
         div.card-body
           div.container-fuid
             div.row
-              include partials/projets/photo/portraits.pug
+              //- include partials/projets/photo/portraits.pug
+              //- include partials/projets/photo/undwmanhattan.pug
+              //- include partials/projets/photo/manhattan.pug 
               include partials/projets/photo/MoMa.pug
               include partials/projets/photo/porte.pug
               include partials/projets/photo/Chinatown.pug
-              include partials/projets/photo/undwmanhattan.pug
-              include partials/projets/photo/manhattan.pug
               include partials/projets/photo/1tradeCenter.pug
               include partials/projets/photo/westfield.pug
               include partials/projets/photo/manhattanSunset.pug
@@ -94,7 +103,7 @@ script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js")
 script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js")
 script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js")
 script(src="assets/js/index.js")
-script(src="assets/p5js/particle.js")
-script(src="assets/p5js/p5.min.js")
-script(src="assets/p5js/p5.dom.js")
-script(src="assets/p5js/sketch.js")
+//- script(src="assets/p5js/particle.js")
+//- script(src="assets/p5js/p5.min.js")
+//- script(src="assets/p5js/p5.dom.js")
+//- script(src="assets/p5js/sketch.js")
