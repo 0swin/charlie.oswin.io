@@ -1,0 +1,51 @@
+//- À MODIFIER
+-var titre = "The Lovers" // TITRE
+-var titreShort = "Lovers" // UN SEUL MOT QUI DESIGNE LE CONTENU
+-var thumbnail = "assets/img/3D/DELAHOUSSE_CHARLIE_ILLUSTRATION_3D_1080.png" // MINIATURE
+
+//- NE RIEN TOUCHER
+div.col-md-6.col-lg-4.thumbnail
+  div.text-center
+    a(href="#" data-toggle="modal" data-target="#" + titreShort)
+      img.img-fluid.lazy(data-src-lazy=thumbnail)
+      p.text-center.text-light= titre 
+      c.text-center.text-light Galerie et Vidéo
+    
+      
+
+div.modal.fade(id=titreShort tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true")
+  div.modal-dialog.modal-lg
+    div.modal-content
+      div.modal-header.container
+        h4.modal-title= titre 
+        button.close(type="button" data-dismiss="modal" aria-label="Close")
+          span(aria-hidden="true") ×
+      div.modal-body.container
+        //- À MODIFIER (CONTENU DE LA PAGE)
+  
+        
+        div.carousel.slide(id=titreShort+"Carousel" data-ride="carousel")
+          div.carousel-inner
+            div.carousel-item.active
+              img.d-block.w-100.lazy(data-src-lazy="assets/img/3D/DELAHOUSSE_CHARLIE_ILLUSTRATION_3D_1080.png")
+            div.carousel-item
+              img.d-block.w-100.lazy(data-src-lazy="assets/img/3D/DELAHOUSSE_CHARLIE_BONUS_02.png")
+            div.carousel-item
+              img.d-block.w-100.lazy(data-src-lazy="assets/img/3D/DELAHOUSSE_CHARLIE_BONUS_04.png")
+            div.carousel-item
+              img.d-block.w-100.lazy(data-src-lazy="assets/img/3D/DELAHOUSSE_CHARLIE_BONUS_06.png")
+            div.carousel-item
+              img.d-block.w-100.lazy(data-src-lazy="assets/img/3D/DELAHOUSSE_CHARLIE_BONUS_05.png")
+
+          a.carousel-control-prev(href="#"+titreShort+"Carousel" role="button" data-slide="prev")
+            span.carousel-control-prev-icon(aria-hidden="true")
+          a.carousel-control-next(href="#"+titreShort+"Carousel" role="button" data-slide="next")
+            span.carousel-control-next-icon(aria-hidden="true")
+
+
+     
+
+       
+    
+        
+      
